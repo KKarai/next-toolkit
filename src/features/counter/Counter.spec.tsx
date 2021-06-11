@@ -4,12 +4,10 @@ import { Provider } from 'react-redux'
 
 jest.mock('./counterAPI', () => ({
   fetchCount: (amount: number) =>
-    new Promise<{ data: number }>((resolve) =>
-      setTimeout(() => resolve({ data: amount }), 500)
-    ),
+    new Promise<{ data: number }>(resolve => setTimeout(() => resolve({ data: amount }), 500))
 }))
 
-import { makeStore } from '../../app/store'
+import { makeStore } from '@store'
 import Counter from './Counter'
 
 describe('<Counter />', () => {
