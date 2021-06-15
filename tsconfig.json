@@ -16,10 +16,10 @@
     "baseUrl": ".",
     "paths": {
       "@features/*": ["src/features/*"],
-      "@common/*": ["src/common/*"],
+      "@common/*": ["src/app/*"],
+      "@app/*": ["src/app/*"],
       "@components/*": ["src/components/*"],
-      "@db": ["src/db.ts"],
-      "@store": ["src/store"]
+      "@db": ["src/db.ts"]
     }
   },
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],

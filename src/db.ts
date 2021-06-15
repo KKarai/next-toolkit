@@ -1,11 +1,4 @@
-type Book = {
-  id: string
-  title: string
-  authors: string[]
-  description?: string
-  pageCount: number
-  thumbnail: string
-}
+import { Book } from '@app/types'
 
 type BookList = Array<Book>
 
